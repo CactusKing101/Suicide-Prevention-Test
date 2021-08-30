@@ -10,7 +10,7 @@ const config = {
   log: true,
   logPeriod: 50,
   layers: [10],
-  errorThresh: 0.005,
+  errorThresh: 0.010,
 };
 
 const network = new brain.recurrent.LSTM();
