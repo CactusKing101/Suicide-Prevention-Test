@@ -8,15 +8,16 @@ const client = new Client({ intents: intents });
 const config = {
   iterations: 1500,
   log: true,
-  logPeriod: 50,
+  logPeriod: 1,
   layers: [10],
+  errorThresh: 0.005,
 };
 
 // Replace this with a database collection that is structured like this retrain ai
 const data = [
   { input: 'i want to end my self', output: 'Suicidal' },
   { input: 'i want to hang my self', output: 'Suicidal' },
-  { input: 'i want play a game', output: 'Normal' },
+  { input: 'i want to play a game', output: 'Normal' },
   { input: 'do you want to play a game', output: 'Normal' },
 ];
 
@@ -26,7 +27,6 @@ network.train(data, config);
 client.on('messageCreate', (msg) => {
   if (msg.author.bot) return;
   const output = network.run(msg.content);
-  console.log(`${msg.content}: ${output}`);
   msg.channel.send(`${msg.content}: ${output}`);
 });
 
