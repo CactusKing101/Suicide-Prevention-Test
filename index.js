@@ -6,7 +6,7 @@ const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_
 
 // create configuration for training
 const config = {
-  iterations: 20000,
+  iterations: 1500,
   log: true,
   logPeriod: 50,
   layers: [10],
