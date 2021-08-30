@@ -8,7 +8,7 @@ const client = new Client({ intents: intents });
 const config = {
   iterations: 20000,
   log: true,
-  logPeriod: 1,
+  logPeriod: 50,
   layers: [10],
   errorThresh: 0.005,
 };
