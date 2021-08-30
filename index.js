@@ -2,13 +2,13 @@ const brain = require('brain.js');
 const { Client, Intents } = require('discord.js');
 const { main } = require('./general/token.json');
 const { SPT } = require('./general/sample.json');
-const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES] });
+const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.GUILD_MEMBERS] });
 
 // create configuration for training
 const config = {
   iterations: 20000,
   log: true,
-  logPeriod: 100,
+  logPeriod: 50,
   layers: [10],
   errorThresh: 0.005,
 };
