@@ -20,7 +20,7 @@ const data = [
   { input: 'do you want to play a game', output: 'Normal' },
 ];
 
-const network = new brain.NeuralNetwork();
+const network = new brain.recurrent.LSTM();
 network.train(data, config);
 
 client.on('messageCreate', (msg) => {
