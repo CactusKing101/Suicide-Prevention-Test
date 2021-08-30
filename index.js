@@ -6,7 +6,7 @@ const client = new Client({ intents: intents });
 
 // create configuration for training
 const config = {
-  iterations: 1500,
+  iterations: 20000,
   log: true,
   logPeriod: 1,
   layers: [10],
