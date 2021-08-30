@@ -1,0 +1,12 @@
+{
+  "SPT": [
+    {"input": "i want to end myself", "output": "Suicidal"},
+    {"input": "i want to hang myself", "output": "Suicidal"},
+    {"input": "i want to kill myself", "output": "Suicidal"},
+    {"input": "i want to die", "output": "Suicidal"},
+    {"input": "i want to die", "output": "Suicidal"},
+    {"input": "i want to play a game", "output": "Normal"},
+    {"input": "do you want to play a game", "output": "Normal"},
+    {"input": "i want to eat", "output": "Normal"}
+  ]
+}
